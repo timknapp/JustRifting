@@ -13,6 +13,9 @@ function Start () {
 }
 
 function Update () {
+
+	var testValAbove = 10;
+	
 	var xVelocity = xSpeed * Mathf.Cos(2*pi * (Time.time / xT));
 	transform.Translate(Vector3(1, 0, 0) * xVelocity * Time.deltaTime);
 	
@@ -21,4 +24,7 @@ function Update () {
 
 	var yVelocity = ySpeed * Mathf.Sin(2*pi * (Time.time / yT));
 	transform.Translate(Vector3(0, 1, 0) * yVelocity * Time.deltaTime);
+	
+	//tony test comment in unity script
+	var testVar = 5;
 }
